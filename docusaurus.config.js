@@ -6,10 +6,10 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /* -------------------------------------------------- */
 const IS_GITHUB = process.env.GITHUB_ACTIONS === 'true';
 const BASE_URL  = process.env.BASE_URL  // 手动覆盖优先
-  ?? (IS_GITHUB ? '/wiki-documents/' : '/');
+  ?? (IS_GITHUB ? '/wiki/' : '/');
 
 const SITE_URL  = process.env.SITE_URL  // 手动覆盖优先
-  ?? (IS_GITHUB ? 'https://camthink-ai.github.io' : 'https://docs.camthink.ai');
+  ?? (IS_GITHUB ? 'https://zhenglingpeng.github.io' : 'https://docs.camthink.ai');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -26,8 +26,8 @@ const config = {
   baseUrl: BASE_URL,
 
   /* GitHub Pages 部署 (org/user & repo) — 不在 GitHub 可忽略 */
-  organizationName: 'camthink-ai',
-  projectName: 'wiki-documents',
+  organizationName: 'zhenglingpeng',
+  projectName: 'wiki',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
